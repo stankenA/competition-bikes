@@ -103,11 +103,9 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  display: inline-block;
 }
 
 .intro__line {
-  display: inline-block;
   width: 132px;
   border: 1px solid #D7D4D4;
 }
