@@ -1,0 +1,384 @@
+.page {
+  box-sizing: border-box;
+  background-color: #F4F4F4;
+  color: #151515;
+  font-family: Inter, Arial, sans-serif;
+  margin: 0 auto;
+  --content-width: 1200px;
+}
+
+.header {
+  min-height: 74px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #F4F4F4;
+  padding-right: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.menu__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #151515;
+  margin-left: 34px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  transition: opacity .5s ease;
+}
+
+.menu__link:hover {
+  opacity: .7;
+}
+
+.content {
+  max-width: var(--content-width);
+  margin: 94px auto 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__title {
+  padding: 80px 0 50px;
+  margin: 0;
+  max-width: 460px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+.intro__text {
+  margin: 0 0 50px;
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: .7;
+}
+
+.intro__button {
+  display: block;
+  background-color: #24B47E;
+  border-radius: 4px;
+  padding: 16px 10px;
+  border: none;
+  color: #fff;
+  width: 160px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all .5s ease-in;
+}
+
+.intro__button:hover {
+  background-color: #167250;
+}
+
+.intro__caption-container {
+  margin-top: 167px;
+  display: flex;
+  align-items: center;
+}
+
+.intro__caption {
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  display: inline-block;
+}
+
+.intro__line {
+  display: inline-block;
+  width: 132px;
+  border: 1px solid #D7D4D4;
+}
+
+.intro__image {
+  display: block;
+  object-fit: cover;
+  position: relative;
+  right: -120px;
+}
+
+.merckx {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.merckx__image {
+  display: block;
+  object-fit: cover;
+  max-width: 650px;
+}
+
+.merckx__container {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+.merckx__quote {
+  margin: 0;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+}
+
+.merckx__quote-author {
+  margin: 262px 0 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.merckx__quote-author-subline {
+  margin: 6px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #222;
+  opacity: .7;
+}
+
+.highway {
+  margin-top: 120px;
+}
+
+.highway__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+.highway__text {
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222;
+  opacity: .7;
+  margin: 50px 0 80px;
+}
+
+.highway__photos {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.highway__photo {
+  display: block;
+  object-fit: cover;
+  max-width: 650px;
+}
+
+.highway__photo:first-of-type {
+  margin-right: 40px;
+}
+
+.highway__buttons {
+  display: flex;
+}
+
+.highway__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+}
+
+.highway__button:hover {
+  background-color: #bdbcbc;
+}
+
+.cards {
+  margin-top: 120px;
+}
+
+.cards__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.cards__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+.cards__menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.cards__link {
+  text-decoration: none;
+  color: #222222;
+  opacity: .7;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 40px;
+  transition: all .5s ease-out;
+}
+
+.cards__link:hover {
+  color: #151515;
+  opacity: 1;
+}
+
+.cards__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 424px);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 340px;
+  height: 340px;
+}
+
+.card__caption {
+  margin: 22px 0 0;
+}
+
+.card__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151515;
+}
+
+.workout {
+  margin-top: 210px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.workout__container {
+  max-width: 460px;
+}
+
+.workout__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+.workout__text {
+  margin: 50px 0 182px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: .7;
+}
+
+.workout__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.workout__list-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #151515;
+  transition: all .5s ease-in-out;
+  margin-right: 30px;
+}
+
+.workout__list-link:hover {
+  opacity: .7;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 120px;
+  min-height: 424px;
+  background-color: #efefef;
+}
+
+.footer__wrapper {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.footer__title {
+  margin: 0;
+  padding: 80px 0 50px;
+  max-width: 229px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.footer__input {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  color: #151515;
+  opacity: 0.7;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  padding: 11px 0 11px 20px;
+  width: 360px;
+  background-color: #efefef;
+}
+
+.footer__copyright {
+  margin: 100px 0 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #CFCFCF;
+}
