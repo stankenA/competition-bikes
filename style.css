@@ -78,7 +78,7 @@
   padding: 16px 10px;
   border: none;
   color: #fff;
-  width: 160px;
+  width: 180px;
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
@@ -261,10 +261,15 @@
   opacity: 1;
 }
 
+.cards__link_active {
+  color: #151515;
+  opacity: 1;
+}
+
 .cards__grid {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 380px);
   grid-template-rows: repeat(auto-fill, 424px);
 }
 
@@ -273,24 +278,30 @@
   flex-direction: column;
 }
 
+.card:hover .card__image {
+  box-shadow: 0px 4px 31px rgb(0 0 0 / 25%);
+}
+
 .card__image {
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
   width: 340px;
   height: 340px;
+  transition: all .6s ease;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
 
 .card__caption {
   margin: 22px 0 0;
-}
-
-.card__link {
-  text-decoration: none;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: #151515;
+}
+
+.card__link {
+  text-decoration: none;
 }
 
 .workout {
@@ -341,6 +352,11 @@
   opacity: .7;
 }
 
+.workout__image {
+  max-width: 580px;
+  display: block;
+}
+
 .footer {
   width: 100%;
   margin-top: 120px;
@@ -362,6 +378,12 @@
   line-height: 32px;
 }
 
+.footer__form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .footer__input {
   font-weight: 500;
   font-size: 13px;
@@ -373,6 +395,15 @@
   padding: 11px 0 11px 20px;
   width: 360px;
   background-color: #efefef;
+  outline: none;
+}
+
+.footer__input::placeholder {
+  color: #151515;
+}
+
+.footer__input:focus {
+  border: 1px solid #151515;
 }
 
 .footer__copyright {
