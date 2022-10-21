@@ -13,7 +13,7 @@
   justify-content: end;
   align-items: center;
   background-color: #F4F4F4;
-  padding-right: 120px;
+  padding-right: 141px;
   position: fixed;
   top: 0;
   left: 0;
@@ -48,12 +48,12 @@
 }
 
 .intro {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  min-height: 836px;
 }
 
 .intro__title {
-  padding: 80px 0 50px;
+  padding: 63px 0 44px;
   margin: 0;
   max-width: 460px;
   font-weight: 700;
@@ -63,7 +63,8 @@
 }
 
 .intro__text {
-  margin: 0 0 50px;
+  display: block;
+  margin: 0 0 53px;
   max-width: 460px;
   font-weight: 400;
   font-size: 18px;
@@ -93,7 +94,7 @@
 }
 
 .intro__caption-container {
-  margin-top: 167px;
+  margin-top: 169px;
   display: flex;
   align-items: center;
 }
@@ -112,8 +113,9 @@
 
 .intro__image {
   display: block;
-  object-fit: cover;
-  position: relative;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
   right: -120px;
 }
 
@@ -121,11 +123,12 @@
   margin-top: 120px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .merckx__image {
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 650px;
 }
 
@@ -144,7 +147,7 @@
 }
 
 .merckx__quote-author {
-  margin: 262px 0 0;
+  margin: 258px 0 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
@@ -160,7 +163,7 @@
 }
 
 .highway {
-  margin-top: 120px;
+  margin-top: 123px;
 }
 
 .highway__title {
@@ -176,9 +179,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  letter-spacing: -0.2px;
   color: #222;
   opacity: .7;
-  margin: 50px 0 80px;
+  margin: 44px 0 83px;
 }
 
 .highway__photos {
@@ -188,12 +192,16 @@
 
 .highway__photo {
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 650px;
 }
 
 .highway__photo:first-of-type {
   margin-right: 40px;
+}
+
+.highway__photo_relative {
+  position: relative;
 }
 
 .highway__buttons {
@@ -217,8 +225,17 @@
   background-color: #bdbcbc;
 }
 
+.highway__button:last-of-type {
+  margin-right: 0;
+}
+
+.highway__svg {
+  width: 10px;
+  height: 18px;
+}
+
 .cards {
-  margin-top: 120px;
+  margin-top: 123px;
 }
 
 .cards__header {
@@ -240,7 +257,7 @@
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0;
 }
 
 .cards__link {
@@ -266,6 +283,7 @@
 
 .cards__grid {
   display: grid;
+  justify-content: center;
   gap: 30px;
   grid-template-columns: repeat(auto-fill, 380px);
   grid-template-rows: repeat(auto-fill, 424px);
@@ -291,7 +309,7 @@
 }
 
 .card__caption {
-  margin: 22px 0 0;
+  margin: 16px 0 0 6px;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -302,10 +320,35 @@
   text-decoration: none;
 }
 
+.cards__dotts {
+  display: none;
+  margin: 0 auto;
+  width: 23px;
+  margin-top: 20px;
+}
+
+.cards__dott {
+  width: 4px;
+  height: 4px;
+  background-color: #cacaca;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.cards__dott:last-of-type {
+  margin-right: 0;
+}
+
+.card__dott_active {
+  background-color: #151515;
+}
+
 .workout {
   margin-top: 210px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  position: relative;
 }
 
 .workout__container {
@@ -321,12 +364,13 @@
 }
 
 .workout__text {
-  margin: 50px 0 182px;
+  margin: 44px 0 182px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #222222;
   opacity: .7;
+  max-width: 460px;
 }
 
 .workout__list {
@@ -353,11 +397,14 @@
 .workout__image {
   max-width: 580px;
   display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .footer {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 126px;
   min-height: 424px;
   background-color: #efefef;
 }
@@ -369,7 +416,7 @@
 
 .footer__title {
   margin: 0;
-  padding: 80px 0 50px;
+  padding: 78px 0 48px;
   max-width: 229px;
   font-weight: 600;
   font-size: 24px;
@@ -391,7 +438,7 @@
   border: 1px solid rgba(199, 199, 199, 0.5);
   border-radius: 4px;
   padding: 11px 0 11px 20px;
-  width: 360px;
+  width: 338px;
   background-color: #efefef;
   outline: none;
 }
@@ -405,9 +452,417 @@
 }
 
 .footer__copyright {
-  margin: 100px 0 0;
+  margin: 99px 0 0;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #CFCFCF;
+}
+
+
+@media screen and (max-width: 1439px) {
+  .page {
+    --content-width: 950px;
+  }
+
+  .header {
+    min-height: 8vh;
+    padding-right: 5%;
+  }
+
+  .content {
+    margin-top: 8vh;
+  }
+
+  .intro {
+    min-height: 80vh;
+  }
+
+  .intro__title {
+    padding-top: 0;
+  }
+
+  .intro__image {
+    width: 44%;
+    right: -36px;
+  }
+
+  .merckx {
+    margin-top: 8%;
+  }
+
+  .merckx__image {
+    max-width: 50%;
+  }
+
+  .merckx__container {
+    max-width: 45%;
+  }
+
+  .merckx__quote-author {
+    margin-top: 92px;
+  }
+
+  .highway__photos {
+    margin-bottom: 3%;
+  }
+
+  .highway__photo {
+    max-width: 48%;
+  }
+
+  .highway {
+    margin-top: 15%;
+  }
+
+  .highway__photo:first-of-type {
+    margin-right: 4%;
+  }
+
+  .cards__header {
+    margin-bottom: 8%;
+  }
+
+  .workout__container {
+    max-width: 45%;
+  }
+
+  .workout__image {
+    height: 100%;
+    max-width: 50%;
+  }
+
+  .footer {
+    min-height: 25vh;
+  }
+
+  .footer__title {
+    padding-top: 30px;
+  }
+
+  .footer__copyright {
+    margin-top: 47px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .page {
+    --content-width: 700px;
+  }
+
+  .intro {
+    min-height: 60vh;
+  }
+
+  .intro__title {
+    max-width: 284px;
+    font-size: 50px;
+    padding-bottom: 24px;
+    padding-bottom: 40px;
+  }
+
+  .intro__image {
+    width: 50%;
+  }
+
+  .intro__text {
+    max-width: 284px;
+    font-size: 16px;
+    margin-bottom: 42px;
+  }
+
+  .intro__image {
+    right: -34px;
+  }
+
+  .intro__caption-container {
+    margin-top: 6%;
+  }
+
+  .merckx__quote {
+    font-size: 23px;
+    line-height: 29px;
+  }
+
+  .merckx__quote-author {
+    font-size: 18px;
+    line-height: 12px;
+    margin-top: 30%;
+  }
+
+  .merckx__quote-author-subline {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .cards__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards__link {
+    margin-left: 0;
+    margin-right: 40px;
+  }
+
+  .cards__grid {
+    grid-template-columns: repeat(auto-fill, 284px);
+    grid-template-rows: repeat(auto-fill, 284px);
+  }
+
+  .cards__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .card__image {
+    padding: 15px;
+    width: 254px;
+    height: 254px;
+  }
+
+  .card__caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 255px;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .workout {
+    margin-top: 120px;
+  }
+
+  .workout__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .workout__text {
+    margin-top: 26px;
+    margin-bottom: 82px;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 325px;
+  }
+
+  .workout__image {
+    max-width: 46%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    --content-width: 284px;
+  }
+
+  .header {
+    min-height: 74px;
+  }
+
+  .content {
+    margin-top: 74px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #E3E3E3;
+    padding-top: 40px;
+  }
+
+  .intro__image {
+    position: relative;
+    right: 0;
+    width: 254px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+  }
+
+  .intro__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .intro__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+
+  .intro__button {
+    padding: 14px 62px;
+    width: 284px;
+  }
+
+  .intro__caption-container {
+    display: none;
+  }
+
+  .merckx {
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #E3E3E3;
+  }
+
+  .merckx__image {
+    max-width: 284px;
+    margin-bottom: 40px;
+  }
+
+  .merckx__container {
+    max-width: 284px;
+  }
+
+  .merckx__quote {
+    letter-spacing: -.7px;
+  }
+
+  .merckx__quote-author {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .merckx__quote-author-subline {
+    margin-top: 4px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .highway {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #E3E3E3;
+  }
+
+  .highway__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .highway__text {
+    font-size: 12px;
+    line-height: 18px;
+    order: 1;
+    margin-top: 40px;
+    margin-bottom: 0;
+    margin-top: 32px;
+  }
+
+  .highway__buttons {
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+
+  .highway__button {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .highway__photo {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .highway__photo:not(:first-child) {
+    display: none;
+  }
+
+  .highway__svg {
+    width: 4.5px;
+    height: 10px;
+  }
+
+  .cards {
+    margin-top: 40px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #E3E3E3;
+  }
+
+  .cards__header {
+    margin-bottom: 20px;
+  }
+
+  .cards__menu {
+    margin-top: 40px;
+  }
+
+  .cards__menu-item:not(:first-child) {
+    display: none;
+  }
+
+  .card:not(:first-child) {
+    display: none;
+  }
+
+  .cards__dotts {
+    display: flex;
+  }
+
+  .workout {
+    margin-top: 40px;
+  }
+
+  .workout__title {
+    margin-bottom: 40px;
+  }
+
+  .workout__image {
+    max-width: 100%;
+  }
+
+  .workout__text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .workout__image {
+    display: block;
+    position: relative;
+  }
+
+  .workout__list-link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer {
+    margin-top: 60px;
+  }
+
+  .footer__title {
+    max-width: 284px;
+    padding: 60px 0 40px;
+  }
+
+  .footer__input {
+    width: 264px;
+  }
+
+  .footer__copyright {
+    margin-top: 99px;
+  }
 }
