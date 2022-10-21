@@ -2,6 +2,7 @@
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/__burger/header__burger.css);
 @import url(../blocks/header/__burger-line/header__burger-line.css);
 @import url(../blocks/header/__burger-line/_second/header__burger-line_second.css);
 @import url(../blocks/header/__burger-line/_third/header__burger-line_third.css);

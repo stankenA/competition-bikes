@@ -1,16 +1,10 @@
 .header__burger-line {
-    position: absolute;
-    top: 28px;
-    right: 18px;
-    width: 22px;
-    height: 2;
-    border: 1px solid #151515;
-    background-color: #151515;
-    z-index: 2;
-  }
-  
-  @media screen and (max-width: 1440px) and (min-width: 769px) {
-    .header__burger-line {
-      display: none;
-    }
-  }
+  position: absolute;
+  top: 28px;
+  right: 18px;
+  width: 22px;
+  height: 2;
+  border: 1px solid #151515;
+  background-color: #151515;
+  z-index: 2;
+}
