@@ -1,0 +1,29 @@
+.merckx__quote-author {
+    margin: 258px 0 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media screen and (max-width: 1439px) {
+    .merckx__quote-author {
+      margin-top: 92px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .merckx__quote-author {
+      font-size: 18px;
+      line-height: 12px;
+      margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .merckx__quote-author {
+      margin-top: 40px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+}

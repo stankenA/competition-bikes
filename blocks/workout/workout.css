@@ -1,0 +1,23 @@
+.workout {
+  margin-top: 210px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+
+
+  .workout {
+    margin-top: 120px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .workout {
+    margin-top: 40px;
+  }
+}

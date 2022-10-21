@@ -1,0 +1,32 @@
+.workout__image {
+  max-width: 580px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1439px) {
+
+  .workout__image {
+    height: 100%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .workout__image {
+    max-width: 46%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .workout__image {
+    max-width: 100%;
+    display: block;
+    position: relative;
+  }
+}

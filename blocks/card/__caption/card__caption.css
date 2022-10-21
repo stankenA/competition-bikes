@@ -1,0 +1,22 @@
+.card__caption {
+  margin: 16px 0 0 6px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151515;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .card__caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 255px;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

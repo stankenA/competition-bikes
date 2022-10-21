@@ -1,0 +1,11 @@
+.highway__svg {
+    width: 10px;
+    height: 18px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .highway__svg {
+      width: 4.5px;
+      height: 10px;
+    }
+}

@@ -1,0 +1,11 @@
+.highway__buttons {
+    display: flex;
+  }
+
+  @media screen and (max-width: 767px) {
+    .highway__buttons {
+      position: absolute;
+      top: 8px;
+      right: 0;
+    }
+}

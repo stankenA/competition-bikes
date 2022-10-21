@@ -1,0 +1,15 @@
+.cards__dott {
+  width: 4px;
+  height: 4px;
+  background-color: #cacaca;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.cards__dott:last-of-type {
+  margin-right: 0;
+}
+
+.card__dott_active {
+  background-color: #151515;
+}

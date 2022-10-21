@@ -1,0 +1,13 @@
+.cards__dotts {
+  display: none;
+  margin: 0 auto;
+  width: 23px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .cards__dotts {
+    display: flex;
+  }
+}

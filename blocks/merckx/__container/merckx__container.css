@@ -1,0 +1,17 @@
+.merckx__container {
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1439px) {
+    .merckx__container {
+      max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .merckx__container {
+      max-width: 284px;
+    }
+}

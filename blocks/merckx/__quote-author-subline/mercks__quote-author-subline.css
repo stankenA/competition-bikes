@@ -1,0 +1,23 @@
+.merckx__quote-author-subline {
+    margin: 6px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #222;
+    opacity: .7;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .merckx__quote-author-subline {
+      font-size: 13px;
+      line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .merckx__quote-author-subline {
+      margin-top: 4px;
+      font-size: 10px;
+      line-height: 16px;
+    }
+}

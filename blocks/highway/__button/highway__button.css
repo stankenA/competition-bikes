@@ -1,0 +1,29 @@
+.highway__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+  }
+  
+  .highway__button:hover {
+    background-color: #bdbcbc;
+  }
+  
+  .highway__button:last-of-type {
+    margin-right: 0;
+  }
+
+@media screen and (max-width: 767px) {
+    .highway__button {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+}
+

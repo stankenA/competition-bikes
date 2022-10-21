@@ -1,0 +1,26 @@
+.intro {
+    position: relative;
+    min-height: 836px;
+}
+
+@media screen and (max-width: 1439px) {
+    .intro {
+      min-height: 80vh;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .intro {
+      min-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 80px;
+      border-bottom: 1px solid #E3E3E3;
+      padding-top: 40px;
+    }
+}

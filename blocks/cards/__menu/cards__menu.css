@@ -1,0 +1,14 @@
+.cards__menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .cards__menu {
+    margin-top: 40px;
+  }
+}

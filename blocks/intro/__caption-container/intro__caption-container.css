@@ -1,0 +1,17 @@
+.intro__caption-container {
+    margin-top: 169px;
+    display: flex;
+    align-items: center;
+  }
+
+@media screen and (max-width: 1023px) {
+    .intro__caption-container {
+        margin-top: 6%;
+      }
+    }
+
+@media screen and (max-width: 767px) {
+    .intro__caption-container {
+        display: none;
+      }
+    }

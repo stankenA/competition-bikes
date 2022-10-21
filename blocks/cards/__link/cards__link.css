@@ -1,0 +1,33 @@
+.cards__link {
+  text-decoration: none;
+  color: #222222;
+  opacity: .7;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 40px;
+  transition: all .5s ease-out;
+}
+
+
+.cards__link:hover {
+  color: #151515;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .cards__link {
+    margin-left: 0;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .cards__link_active {
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    padding: 8px 64px 8px 12px;
+  }
+}

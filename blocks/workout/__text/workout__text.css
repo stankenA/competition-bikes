@@ -1,0 +1,30 @@
+.workout__text {
+  margin: 44px 0 182px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: .7;
+  max-width: 460px;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .workout__text {
+    margin-top: 26px;
+    margin-bottom: 82px;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 325px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .workout__text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

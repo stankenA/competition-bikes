@@ -1,0 +1,30 @@
+.highway__photo {
+    display: block;
+    object-fit: contain;
+    max-width: 650px;
+  }
+
+.highway__photo:first-of-type {
+    margin-right: 40px;
+  }
+
+@media screen and (max-width: 1439px) {
+    .highway__photo {
+      max-width: 48%;
+    }
+  
+    .highway__photo:first-of-type {
+      margin-right: 4%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .highway__photo {
+        margin-left: 0;
+        max-width: 100%;
+      }
+    
+      .highway__photo:not(:first-child) {
+        display: none;
+      }
+}

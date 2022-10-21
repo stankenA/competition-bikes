@@ -1,0 +1,18 @@
+.card__image {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 340px;
+  height: 340px;
+  transition: all .6s ease;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+}
+
+@media screen and (max-width: 1023px) {
+
+  .card__image {
+    padding: 15px;
+    width: 254px;
+    height: 254px;
+  }
+}

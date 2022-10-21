@@ -1,0 +1,21 @@
+.highway__text {
+    max-width: 460px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: #222;
+    opacity: .7;
+    margin: 44px 0 83px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .highway__text {
+      font-size: 12px;
+      line-height: 18px;
+      order: 1;
+      margin-top: 40px;
+      margin-bottom: 0;
+      margin-top: 32px;
+    }
+}

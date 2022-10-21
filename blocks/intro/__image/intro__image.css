@@ -1,0 +1,31 @@
+.intro__image {
+    display: block;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    right: -120px;
+  }
+
+  @media screen and (max-width: 1439px) {
+    .intro__image {
+      width: 44%;
+      right: -36px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+  .intro__image {
+    width: 50%;
+    right: -34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro__image {
+    position: relative;
+    right: 0;
+    width: 254px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+  }
+}

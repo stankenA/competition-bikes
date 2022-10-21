@@ -1,0 +1,6 @@
+@media screen and (max-width: 767px) {
+
+  .cards__menu-item:not(:first-child) {
+    display: none;
+  }
+}

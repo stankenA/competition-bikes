@@ -1,0 +1,10 @@
+.highway__photos {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  @media screen and (max-width: 1439px) {
+    .highway__photos {
+      margin-bottom: 3%;
+    }
+}

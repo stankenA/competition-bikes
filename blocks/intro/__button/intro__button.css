@@ -1,0 +1,27 @@
+.intro__button {
+    display: block;
+    background-color: #24B47E;
+    border-radius: 4px;
+    padding: 16px 10px;
+    border: none;
+    color: #fff;
+    width: 180px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all .5s ease-in;
+}
+  
+  .intro__button:hover {
+    background-color: #167250;
+}
+
+@media screen and (max-width: 767px) {
+    .intro__button {
+        padding: 14px 62px;
+        width: 284px;
+      }
+    }
